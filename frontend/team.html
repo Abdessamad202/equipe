@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Casablanca</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevent horizontal overflow */
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px; /* Prevents overflow when content is too large */
+        }
+
+        /* Team container */
+        .team-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            box-sizing: border-box;
+            max-height: 95vh; /* Prevent overflow in height */
+            overflow-y: auto; /* Allow vertical scrolling if needed */
+        }
+
+        .team-container img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #4CAF50;
+        }
+
+        .team-container h1 {
+            color: #333;
+            font-size: 2.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .team-container p {
+            color: #777;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            text-align: center;
+        }
+
+        .achievements h2 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .achievements-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .achievement-item {
+            background-color: #e9f5e9;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 250px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .achievement-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .achievement-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 12px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .achievement-item p {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .achievement-icon {
+            font-size: 50px;
+            color: #4CAF50;
+            margin-bottom: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="team-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_LQLG2J0tXD_HlSbutXNgsQr5efhvpbyVjg&s" alt="Raja Casablanca Logo">
+    <h1>Raja Casablanca</h1>
+    <p>Country: Morocco</p>
+
+    <div class="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements-list">
+        </div>
+    </div>
+</div>
+<script>
+const url = window.location.pathname; // "/equipes/fjhks"
+
+// Split the URL by '/'
+const parts = url.split('/');
+
+// Extract the last part (the team name)
+const teamName = parts[parts.length - 1].split("%20").join(" ");  // Decode "%20" to space
+
+// Fetch the data for the team
+fetch("http://localhost:3000/api/equipes/" + teamName)
+    .then(response => response.json())  // Parse the JSON response
+    .then(data => {
+        let container = document.querySelector(".team-container")
+        container.innerHTML = `
+            <img src="${data.image}" alt="Raja Casablanca Logo">
+            <h1>${data.team}</h1>
+            <p>Country: ${data.country}</p>
+            <div class="achievements"></div>
+        `;
+        let achievements = container.querySelector(".achievements");
+        achievements.innerHTML = `
+                <h2>Achievements</h2>
+                <div class="achievements-list"></div>
+        `
+        let list = achievements.querySelector(".achievements-list")
+        data.achievements.forEach(element => {
+            list.innerHTML+=`
+                <div class="achievement-item">
+                    <div class="achievement-icon">${element.icon}</div>
+                    <h3>${element.count}x ${element.title}</h3>
+                    <p>${element.description}</p>
+                </div>
+            `
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching team data:', error);  // Error handling
+    });
+
+// console.log(teamName); // Outputs "fjhks"
+</script>
+</body>
+</html>
