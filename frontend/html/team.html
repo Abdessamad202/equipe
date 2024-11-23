@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Casablanca</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/team.css">
+</head>
+
+<body>
+
+    <a name="" id="back" class="btn btn-primary" href="exampe.html" role="button">
+        &larr;
+    </a>
+    <div class="team-container">
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search) // it will parse the url search side
+        const id = params.get("id") // it will returns the parameter that you want as a string
+        console.log(id);
+        console.log("http://localhost:3000/api/equipes/" + id)
+        // Fetch the data for the team
+        fetch("http://localhost:3000/api/equipes/" + id)
+            .then(response => response.json())  // Parse the JSON response
+            .then(data => {
+                let container = document.querySelector(".team-container")
+                container.innerHTML = `
+            <img src="${data.image}" alt="Raja Casablanca Logo">
+            <h1>${data.team}</h1>
+            <p>Country: ${data.country}</p>
+            <div class="achievements"></div>
+        `;
+                let achievements = container.querySelector(".achievements");
+                achievements.innerHTML = `
+                <h2>Achievements</h2>
+                <div class="achievements-list"></div>
+        `
+                let list = achievements.querySelector(".achievements-list")
+                data.achievements.forEach(element => {
+                    list.innerHTML += `
+                <div class="achievement-item">
+                    <div class="achievement-icon">${element.icon}</div>
+                    <h3>${element.count}x ${element.title}</h3>
+                    <p>${element.description}</p>
+                </div>
+            `
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching team data:', error);  // Error handling
+            });
+
+        // console.log(teamName); // Outputs "fjhks"
+    </script>
+</body>
+
+</html>

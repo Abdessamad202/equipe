@@ -12,7 +12,6 @@ app.use((req, res, next) => {
 });
 
 // const {json} = require("express");
-let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
 
 
 const PORT = 3000;
@@ -25,16 +24,24 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
 app.get("/api/equipes", (req, res) => {
+let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
     let getData = JSON.parse(data)
     res.json(getData)
 })
-app.get("/api/equipes/:name", (req, res) => {
+app.get("/api/equipes/:id", (req, res) => {
+    let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
+
     let getData = JSON.parse(data); // Assuming `data` is a JSON string containing your data
-    let team = getData.find(element => element.team.toLowerCase() === req.params.name.toLowerCase());
+    let team = getData.find(element => element.id == req.params.id);
 
     if (team) {
+        console.log(team);
+
         res.json(team);
+
     } else {
+        console.log("error");
+
         res.status(404).json({ message: "Team not found" });
     }
     // res.json(req.params.name);
@@ -42,21 +49,3 @@ app.get("/api/equipes/:name", (req, res) => {
 
 // let data = fs.readFileSync(path.resolve(__dirname,"equipe.json"),"utf8")
 // const path = require('path');  // Import the 'path' module
-
-app.get("/equipes/:name", (req, res) => {
-    // Generate the correct file path for 'team.html'
-    const filePath = path.join(__dirname, "../frontend", "team.html");
-    
-    // Send the HTML file
-    res.sendFile(filePath);
-});
-
-// const path = require('path');  // Import the 'path' module
-
-app.get("/equipes", (req, res) => {
-    // Correct the file name to "example.html" (if that’s the intended file name)
-    const filePath = path.join(__dirname, "../frontend", "exampe.html");
-    
-    // Send the HTML file
-    res.sendFile(filePath);
-});

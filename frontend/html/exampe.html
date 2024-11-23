@@ -6,60 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Football Team</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-
-    .team-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .player-card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 200px;
-      text-align: center;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .player-card:hover {
-      transform: scale(1.05);
-    }
-
-    .player-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .player-info {
-      padding: 15px;
-    }
-
-    .player-info h3 {
-      margin: 10px 0 5px;
-      font-size: 1.2em;
-    }
-
-    .player-info p {
-      margin: 0;
-      color: #666;
-    }
-    .achievement-item-link {
-    text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Make sure the text color inherits from the parent */
-}
-  </style>
+  <link rel="stylesheet" href="../css/teams.css">
 </head>
 
 <body>
@@ -88,7 +35,7 @@
     data.forEach(element => {
       content += `
     <div class="player-card">
-      <a class="achievement-item-link" href ="equipes/${element.team}">
+      <a class="achievement-item-link" href ="team.html?id=${element.id}">
         <img
           src="${element.image}"
           alt=""

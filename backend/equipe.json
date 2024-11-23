@@ -1,260 +1,270 @@
 [
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_LQLG2J0tXD_HlSbutXNgsQr5efhvpbyVjg&s",
-        "team": "Raja Casablanca",
-        "country": "Morocco",
-        "founded": 1949,
-        "stadium": "Stade Mohammed V",
-        "achievements": [
-            {
-                "title": "CAF Champions League",
-                "count": 3,
-                "icon": "🏆",
-                "description": "The premier continental competition in Africa, won by Raja Casablanca three times."
-            },
-            {
-                "title": "CAF Super Cup",
-                "count": 2,
-                "icon": "⚽",
-                "description": "A competition for the winners of the CAF Champions League and CAF Confederation Cup, won by Raja twice."
-            },
-            {
-                "title": "Botola Pro",
-                "count": 13,
-                "icon": "🏅",
-                "description": "The Moroccan top football league, a testament to Raja Casablanca's dominance with 13 titles."
-            }
-        ]
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_LQLG2J0tXD_HlSbutXNgsQr5efhvpbyVjg&s",
+      "team": "Raja Casablanca",
+      "country": "Morocco",
+      "founded": 1949,
+      "stadium": "Stade Mohammed V",
+      "achievements": [
+        {
+          "title": "CAF Champions League",
+          "count": 3,
+          "icon": "🏆",
+          "description": "The premier continental competition in Africa, won by Raja Casablanca three times."
+        },
+        {
+          "title": "CAF Super Cup",
+          "count": 2,
+          "icon": "⚽",
+          "description": "A competition for the winners of the CAF Champions League and CAF Confederation Cup, won by Raja twice."
+        },
+        {
+          "title": "Botola Pro",
+          "count": 13,
+          "icon": "🏅",
+          "description": "The Moroccan top football league, a testament to Raja Casablanca's dominance with 13 titles."
+        }
+      ]
     },
     {
-        "image": "https://www.logotypes101.com/logos/629/3B0313E4294CD55230B623AC827458F1/rsb_logo.png",
-        "team": "RSB Berkane",
-        "country": "Morocco",
-        "founded": 1938,
-        "stadium": "Stade Municipal de Berkane",
-        "achievements": [
-            {
-                "title": "CAF Confederation Cup",
-                "count": 2,
-                "icon": "🏆",
-                "description": "Africa's second-tier club competition, won twice by RSB Berkane."
-            },
-            {
-                "title": "Moroccan Throne Cup",
-                "count": 1,
-                "icon": "👑",
-                "description": "The prestigious cup competition in Morocco, won by RSB Berkane once."
-            }
-        ]
+      "id": 2,
+      "image": "https://www.logotypes101.com/logos/629/3B0313E4294CD55230B623AC827458F1/rsb_logo.png",
+      "team": "RSB Berkane",
+      "country": "Morocco",
+      "founded": 1938,
+      "stadium": "Stade Municipal de Berkane",
+      "achievements": [
+        {
+          "title": "CAF Confederation Cup",
+          "count": 2,
+          "icon": "🏆",
+          "description": "Africa's second-tier club competition, won twice by RSB Berkane."
+        },
+        {
+          "title": "Moroccan Throne Cup",
+          "count": 1,
+          "icon": "👑",
+          "description": "The prestigious cup competition in Morocco, won by RSB Berkane once."
+        }
+      ]
     },
     {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FXHgb9gwFzxP6-GUd1AksPtRDQAjVvr7IA&s",
-        "team": "MAS Fes",
-        "country": "Morocco",
-        "founded": 1946,
-        "stadium": "Stade de Fès",
-        "achievements": [
-            {
-                "title": "CAF Confederation Cup",
-                "count": 1,
-                "icon": "🏆",
-                "description": "The CAF Confederation Cup, Africa's second-tier competition, won once by MAS Fes."
-            },
-            {
-                "title": "Moroccan Throne Cup",
-                "count": 4,
-                "icon": "👑",
-                "description": "A domestic competition won four times by MAS Fes."
-            }
-        ]
+      "id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FXHgb9gwFzxP6-GUd1AksPtRDQAjVvr7IA&s",
+      "team": "MAS Fes",
+      "country": "Morocco",
+      "founded": 1946,
+      "stadium": "Stade de Fès",
+      "achievements": [
+        {
+          "title": "CAF Confederation Cup",
+          "count": 1,
+          "icon": "🏆",
+          "description": "The CAF Confederation Cup, Africa's second-tier competition, won once by MAS Fes."
+        },
+        {
+          "title": "Moroccan Throne Cup",
+          "count": 4,
+          "icon": "👑",
+          "description": "A domestic competition won four times by MAS Fes."
+        }
+      ]
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/en/c/c7/ASFAR_%28football_club%29_logo.png",
-        "team": "AS FAR",
-        "country": "Morocco",
-        "founded": 1958,
-        "stadium": "Stade Prince Moulay Abdellah",
-        "achievements": [
-            {
-                "title": "CAF Champions League",
-                "count": 1,
-                "icon": "🏆",
-                "description": "Africa's most prestigious club competition, won once by AS FAR."
-            },
-            {
-                "title": "Botola Pro",
-                "count": 12,
-                "icon": "🏅",
-                "description": "The Moroccan league title, won 12 times by AS FAR."
-            },
-            {
-                "title": "Moroccan Throne Cup",
-                "count": 11,
-                "icon": "👑",
-                "description": "The Moroccan national cup, which AS FAR has claimed 11 times."
-            }
-        ]
+      "id": 4,
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c7/ASFAR_%28football_club%29_logo.png",
+      "team": "AS FAR",
+      "country": "Morocco",
+      "founded": 1958,
+      "stadium": "Stade Prince Moulay Abdellah",
+      "achievements": [
+        {
+          "title": "CAF Champions League",
+          "count": 1,
+          "icon": "🏆",
+          "description": "Africa's most prestigious club competition, won once by AS FAR."
+        },
+        {
+          "title": "Botola Pro",
+          "count": 12,
+          "icon": "🏅",
+          "description": "The Moroccan league title, won 12 times by AS FAR."
+        },
+        {
+          "title": "Moroccan Throne Cup",
+          "count": 11,
+          "icon": "👑",
+          "description": "The Moroccan national cup, which AS FAR has claimed 11 times."
+        }
+      ]
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/fr/9/96/Logo_Wydad_Athletic_Club.png",
-        "team": "Widad Casablanca",
-        "country": "Morocco",
-        "founded": 1937,
-        "stadium": "Stade Mohammed V",
-        "achievements": [
-            {
-                "title": "CAF Champions League",
-                "count": 3,
-                "icon": "🏆",
-                "description": "Africa’s premier club competition, won by Wydad Casablanca three times."
-            },
-            {
-                "title": "CAF Super Cup",
-                "count": 1,
-                "icon": "⚽",
-                "description": "The Super Cup of Africa, won by Wydad once."
-            },
-            {
-                "title": "Botola Pro",
-                "count": 22,
-                "icon": "🏅",
-                "description": "The Moroccan top league, where Wydad has been crowned champions 22 times."
-            }
-        ]
+      "id": 5,
+      "image": "https://upload.wikimedia.org/wikipedia/fr/9/96/Logo_Wydad_Athletic_Club.png",
+      "team": "Widad Casablanca",
+      "country": "Morocco",
+      "founded": 1937,
+      "stadium": "Stade Mohammed V",
+      "achievements": [
+        {
+          "title": "CAF Champions League",
+          "count": 3,
+          "icon": "🏆",
+          "description": "Africa’s premier club competition, won by Wydad Casablanca three times."
+        },
+        {
+          "title": "CAF Super Cup",
+          "count": 1,
+          "icon": "⚽",
+          "description": "The Super Cup of Africa, won by Wydad once."
+        },
+        {
+          "title": "Botola Pro",
+          "count": 22,
+          "icon": "🏅",
+          "description": "The Moroccan top league, where Wydad has been crowned champions 22 times."
+        }
+      ]
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1024px-FC_Barcelona_%28crest%29.svg.png",
-        "team": "FC Barcelona",
-        "country": "Spain",
-        "founded": 1899,
-        "stadium": "Camp Nou",
-        "achievements": [
-            {
-                "title": "La Liga",
-                "count": 27,
-                "icon": "⚽",
-                "description": "The top division of Spanish football, won by Barcelona 27 times."
-            },
-            {
-                "title": "UEFA Champions League",
-                "count": 5,
-                "icon": "🏆",
-                "description": "The most prestigious European competition, won five times by Barcelona."
-            },
-            {
-                "title": "Copa del Rey",
-                "count": 31,
-                "icon": "🏅",
-                "description": "Spain's national cup competition, where Barcelona holds a record 31 titles."
-            }
-        ]
+      "id": 6,
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1024px-FC_Barcelona_%28crest%29.svg.png",
+      "team": "FC Barcelona",
+      "country": "Spain",
+      "founded": 1899,
+      "stadium": "Camp Nou",
+      "achievements": [
+        {
+          "title": "La Liga",
+          "count": 27,
+          "icon": "⚽",
+          "description": "The top division of Spanish football, won by Barcelona 27 times."
+        },
+        {
+          "title": "UEFA Champions League",
+          "count": 5,
+          "icon": "🏆",
+          "description": "The most prestigious European competition, won five times by Barcelona."
+        },
+        {
+          "title": "Copa del Rey",
+          "count": 31,
+          "icon": "🏅",
+          "description": "Spain's national cup competition, where Barcelona holds a record 31 titles."
+        }
+      ]
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
-        "team": "Real Madrid",
-        "country": "Spain",
-        "founded": 1902,
-        "stadium": "Santiago Bernabéu",
-        "achievements": [
-            {
-                "title": "La Liga",
-                "count": 35,
-                "icon": "⚽",
-                "description": "Spain's top league, where Real Madrid holds a record 35 titles."
-            },
-            {
-                "title": "UEFA Champions League",
-                "count": 15,
-                "icon": "🏆",
-                "description": "The most prestigious European club competition, won 15 times by Real Madrid."
-            },
-            {
-                "title": "Copa del Rey",
-                "count": 20,
-                "icon": "🏅",
-                "description": "The Spanish national cup competition, claimed 20 times by Real Madrid."
-            }
-        ]
+      "id": 7,
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
+      "team": "Real Madrid",
+      "country": "Spain",
+      "founded": 1902,
+      "stadium": "Santiago Bernabéu",
+      "achievements": [
+        {
+          "title": "La Liga",
+          "count": 35,
+          "icon": "⚽",
+          "description": "Spain's top league, where Real Madrid holds a record 35 titles."
+        },
+        {
+          "title": "UEFA Champions League",
+          "count": 15,
+          "icon": "🏆",
+          "description": "The most prestigious European club competition, won 15 times by Real Madrid."
+        },
+        {
+          "title": "Copa del Rey",
+          "count": 20,
+          "icon": "🏅",
+          "description": "The Spanish national cup competition, claimed 20 times by Real Madrid."
+        }
+      ]
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1024px-Manchester_United_FC_crest.svg.png",
-        "team": "Manchester United",
-        "country": "England",
-        "founded": 1878,
-        "stadium": "Old Trafford",
-        "achievements": [
-            {
-                "title": "Premier League",
-                "count": 20,
-                "icon": "⚽",
-                "description": "England’s top division, where Manchester United has won 20 titles."
-            },
-            {
-                "title": "UEFA Champions League",
-                "count": 3,
-                "icon": "🏆",
-                "description": "Europe's premier club competition, claimed 3 times by Manchester United."
-            },
-            {
-                "title": "FA Cup",
-                "count": 12,
-                "icon": "🏅",
-                "description": "The oldest cup competition in England, won 12 times by Manchester United."
-            }
-        ]
+      "id": 8,
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1024px-Manchester_United_FC_crest.svg.png",
+      "team": "Manchester United",
+      "country": "England",
+      "founded": 1878,
+      "stadium": "Old Trafford",
+      "achievements": [
+        {
+          "title": "Premier League",
+          "count": 20,
+          "icon": "⚽",
+          "description": "England’s top division, where Manchester United has won 20 titles."
+        },
+        {
+          "title": "UEFA Champions League",
+          "count": 3,
+          "icon": "🏆",
+          "description": "Europe's premier club competition, claimed 3 times by Manchester United."
+        },
+        {
+          "title": "FA Cup",
+          "count": 12,
+          "icon": "🏅",
+          "description": "The oldest cup competition in England, won 12 times by Manchester United."
+        }
+      ]
     },
     {
-        "image": "https://1000logos.net/wp-content/uploads/2016/10/AC-Milan-Logo.png",
-        "team": "AC Milan",
-        "country": "Italy",
-        "founded": 1899,
-        "stadium": "San Siro",
-        "achievements": [
-            {
-                "title": "Serie A",
-                "count": 19,
-                "icon": "⚽",
-                "description": "Italy’s top football division, where AC Milan has been champions 19 times."
-            },
-            {
-                "title": "UEFA Champions League",
-                "count": 7,
-                "icon": "🏆",
-                "description": "The premier European competition, won 7 times by AC Milan."
-            },
-            {
-                "title": "Coppa Italia",
-                "count": 5,
-                "icon": "🏅",
-                "description": "Italy's national cup competition, won 5 times by AC Milan."
-            }
-        ]
+      "id": 9,
+      "image": "https://1000logos.net/wp-content/uploads/2016/10/AC-Milan-Logo.png",
+      "team": "AC Milan",
+      "country": "Italy",
+      "founded": 1899,
+      "stadium": "San Siro",
+      "achievements": [
+        {
+          "title": "Serie A",
+          "count": 19,
+          "icon": "⚽",
+          "description": "Italy’s top football division, where AC Milan has been champions 19 times."
+        },
+        {
+          "title": "UEFA Champions League",
+          "count": 7,
+          "icon": "🏆",
+          "description": "The premier European competition, won 7 times by AC Milan."
+        },
+        {
+          "title": "Coppa Italia",
+          "count": 5,
+          "icon": "🏅",
+          "description": "Italy's national cup competition, won 5 times by AC Milan."
+        }
+      ]
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam.svg",
-        "team": "AFC Ajax",
-        "country": "Netherlands",
-        "founded": 1900,
-        "stadium": "Johan Cruyff Arena",
-        "achievements": [
-            {
-                "title": "Eredivisie",
-                "count": 36,
-                "icon": "⚽",
-                "description": "The top division of Dutch football, won 36 times by Ajax."
-            },
-            {
-                "title": "UEFA Champions League",
-                "count": 4,
-                "icon": "🏆",
-                "description": "Europe's top competition, claimed 4 times by Ajax."
-            },
-            {
-                "title": "KNVB Cup",
-                "count": 20,
-                "icon": "🏅",
-                "description": "The Dutch national cup competition, won 20 times by Ajax."
-            }
-        ]
+      "id": 10,
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam.svg",
+      "team": "AFC Ajax",
+      "country": "Netherlands",
+      "founded": 1900,
+      "stadium": "Johan Cruyff Arena",
+      "achievements": [
+        {
+          "title": "Eredivisie",
+          "count": 36,
+          "icon": "⚽",
+          "description": "The top division of Dutch football, won 36 times by Ajax."
+        },
+        {
+          "title": "UEFA Champions League",
+          "count": 4,
+          "icon": "🏆",
+          "description": "Europe's top competition, claimed 4 times by Ajax."
+        },
+        {
+          "title": "KNVB Cup",
+          "count": 20,
+          "icon": "🏅",
+          "description": "The Dutch national cup competition, won 20 times by Ajax."
+        }
+      ]
     }
-]
+  ]
