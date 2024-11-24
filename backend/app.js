@@ -24,7 +24,7 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
 app.get("/api/equipes", (req, res) => {
-let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
+    let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
     let getData = JSON.parse(data)
     res.json(getData)
 })
@@ -35,7 +35,7 @@ app.get("/api/equipes/:id", (req, res) => {
     let team = getData.find(element => element.id == req.params.id);
 
     if (team) {
-        console.log(team);
+        // console.log(team);
 
         res.json(team);
 
@@ -46,6 +46,21 @@ app.get("/api/equipes/:id", (req, res) => {
     }
     // res.json(req.params.name);
 });
+app.get("/api/countries",(req,res) => {
+    let data= fs.readFileSync(path.resolve(__dirname,"countries.json"),"UTF-8")
+    res.json(JSON.parse(data))
+    // console.log(data);
 
+}
+)
+app.post("/api/equipes/:id",(req,res) => {
+    let data= fs.readFileSync(path.resolve(__dirname,"equipe.json"),"UTF-8")
+    data = JSON.parse(data)
+    data= data.map(el => el.id == req.params.id ? {...el,...req.body} : el)
+    data = JSON.stringify(data)
+    fs.writeFileSync(path.resolve(__dirname,"equipe.json"),data,"utf-8")
+    res.redirect("/api/equipes/"+req.params.id)
+}
+)
 // let data = fs.readFileSync(path.resolve(__dirname,"equipe.json"),"utf8")
 // const path = require('path');  // Import the 'path' module
