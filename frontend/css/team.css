@@ -120,5 +120,18 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
+  font-size: 20px;
+  z-index: 3744;
 }
 /* </style> */
+.modify{
+  position: absolute;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  /* background-color: blue; */
+}
+.team-container{
+  position: relative;
+}
