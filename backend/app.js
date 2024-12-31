@@ -23,17 +23,15 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-app.get("/api/equipes", (req, res) => {
-let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
+app.get("/api/users", (req, res) => {
+let data = fs.readFileSync(path.resolve(__dirname, "users.json"), "utf8");
     let getData = JSON.parse(data)
     res.json(getData)
 })
 app.get("/api/equipes/:id", (req, res) => {
     let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
-
     let getData = JSON.parse(data); // Assuming `data` is a JSON string containing your data
     let team = getData.find(element => element.id == req.params.id);
-
     if (team) {
         console.log(team);
 
@@ -46,6 +44,23 @@ app.get("/api/equipes/:id", (req, res) => {
     }
     // res.json(req.params.name);
 });
+app.put("/api/equipes/:id", (req, res) => {
+    let data = fs.readFileSync(path.resolve(__dirname, "equipe.json"), "utf8");
+    let getData = JSON.parse(data); // Assuming `data` is a JSON string containing your data
+    // let updatedData = getData.map(element => element.id == req.params.id ? :);
+    // if (team) {
+    //     console.log(team);
+
+    //     res.json(team);
+
+    // } else {
+    //     console.log("error");
+
+    //     res.status(404).json({ message: "Team not found" });
+    // }
+    // res.json(req.params.name);
+});
+
 
 // let data = fs.readFileSync(path.resolve(__dirname,"equipe.json"),"utf8")
 // const path = require('path');  // Import the 'path' module
