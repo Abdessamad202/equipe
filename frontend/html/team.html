@@ -18,7 +18,8 @@
     </div>
     <script>
         const params = new URLSearchParams(window.location.search) // it will parse the url search side
-        const id = params.get("id") // it will returns the parameter that you want as a string
+        const id = params.get("id") // it will returns the parameters that you want as a object
+        // you can get it on with get("key") ar getALL() 
         console.log(id);
         console.log("http://localhost:3000/api/equipes/" + id)
         // Fetch the data for the team
